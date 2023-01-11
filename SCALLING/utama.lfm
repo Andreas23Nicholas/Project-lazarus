@@ -1,0 +1,178 @@
+object FormUtama: TFormUtama
+  Left = 576
+  Height = 434
+  Top = 196
+  Width = 774
+  Caption = 'Peraga Scalling - Replikasi & Interpolasi'
+  ClientHeight = 434
+  ClientWidth = 774
+  DesignTimePPI = 120
+  LCLVersion = '2.0.12.0'
+  object ButtonLoad: TButton
+    Left = 10
+    Height = 31
+    Top = 10
+    Width = 94
+    Caption = 'Load'
+    OnClick = ButtonLoadClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ButtonScaling: TButton
+    Left = 230
+    Height = 31
+    Top = 10
+    Width = 94
+    Caption = 'Scaling'
+    OnClick = ButtonScalingClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ButtonSave: TButton
+    Left = 120
+    Height = 31
+    Top = 10
+    Width = 94
+    Caption = 'Save'
+    OnClick = ButtonSaveClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Panel1: TPanel
+    Left = 10
+    Height = 280
+    Top = 140
+    Width = 753
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderWidth = 10
+    BorderStyle = bsSingle
+    Caption = 'Panel1'
+    ClientHeight = 276
+    ClientWidth = 749
+    ParentFont = False
+    TabOrder = 3
+    object ScrollBox1: TScrollBox
+      Left = 11
+      Height = 254
+      Top = 11
+      Width = 354
+      HorzScrollBar.Page = 100
+      VertScrollBar.Page = 100
+      Align = alLeft
+      ClientHeight = 250
+      ClientWidth = 350
+      ParentFont = False
+      TabOrder = 0
+      object Image1: TImage
+        Left = 10
+        Height = 90
+        Top = 10
+        Width = 90
+        AutoSize = True
+      end
+    end
+    object Splitter1: TSplitter
+      Left = 365
+      Height = 254
+      Top = 11
+      Width = 12
+    end
+    object ScrollBox2: TScrollBox
+      Left = 377
+      Height = 254
+      Top = 11
+      Width = 361
+      HorzScrollBar.Page = 336
+      VertScrollBar.Page = 229
+      Align = alClient
+      ClientHeight = 229
+      ClientWidth = 336
+      ParentFont = False
+      TabOrder = 2
+      object Image2: TImage
+        Left = 10
+        Height = 1250
+        Top = 10
+        Width = 1250
+      end
+    end
+  end
+  object RadioGroupPerbaikan: TRadioGroup
+    Left = 450
+    Height = 91
+    Top = 10
+    Width = 150
+    AutoFill = True
+    Caption = 'Perbaikan'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 66
+    ClientWidth = 146
+    ItemIndex = 0
+    Items.Strings = (
+      'Tanpa Perbaikan'
+      'Replikasi'
+      'Interpolasi'
+    )
+    ParentFont = False
+    TabOrder = 4
+  end
+  object RadioGroupInisialisasi: TRadioGroup
+    Left = 340
+    Height = 71
+    Top = 10
+    Width = 88
+    AutoFill = True
+    Caption = 'Inisialisasi'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 46
+    ClientWidth = 84
+    ItemIndex = 0
+    Items.Strings = (
+      'hitam'
+      'putih'
+    )
+    ParentFont = False
+    TabOrder = 5
+  end
+  object TrackBarSkala: TTrackBar
+    Left = 20
+    Height = 31
+    Top = 90
+    Width = 370
+    Max = 50
+    Min = 1
+    OnChange = TrackBarSkalaChange
+    Position = 1
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 400
+    Height = 20
+    Top = 90
+    Width = 35
+    Caption = '0.000'
+    ParentColor = False
+    ParentFont = False
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 660
+    Top = 10
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 660
+    Top = 90
+  end
+end
