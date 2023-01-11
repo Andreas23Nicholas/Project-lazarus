@@ -1,0 +1,198 @@
+object FormUtama: TFormUtama
+  Left = 725
+  Height = 480
+  Top = 273
+  Width = 715
+  Caption = 'Peraga Aritmatika'
+  ClientHeight = 480
+  ClientWidth = 715
+  DesignTimePPI = 120
+  LCLVersion = '2.0.12.0'
+  object ButtonLoad: TButton
+    Left = 10
+    Height = 31
+    Top = 10
+    Width = 94
+    Caption = 'Load Citra 1'
+    OnClick = ButtonLoadClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ButtonSave: TButton
+    Left = 10
+    Height = 31
+    Top = 50
+    Width = 94
+    Caption = 'Save'
+    OnClick = ButtonSaveClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ImageAsli: TImage
+    Left = 10
+    Height = 90
+    Top = 220
+    Width = 90
+    AutoSize = True
+  end
+  object ButtonProses: TButton
+    Left = 220
+    Height = 31
+    Top = 10
+    Width = 220
+    Caption = 'Aritmatika Dasar Grayscale'
+    OnClick = ButtonProsesClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object ButtonClose: TButton
+    Left = 110
+    Height = 31
+    Top = 50
+    Width = 94
+    Caption = 'Close'
+    OnClick = ButtonCloseClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object ImageHasil: TImage
+    Left = 250
+    Height = 90
+    Top = 220
+    Width = 90
+    AutoSize = True
+  end
+  object ImageAsli2: TImage
+    Left = 130
+    Height = 90
+    Top = 220
+    Width = 90
+    AutoSize = True
+  end
+  object ButtonLoad2: TButton
+    Left = 110
+    Height = 31
+    Top = 10
+    Width = 94
+    Caption = 'Load citra 2'
+    OnClick = ButtonLoad2Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object ButtonBiner: TButton
+    Left = 220
+    Height = 31
+    Top = 50
+    Width = 220
+    Caption = 'Aritmatika Dasar Biner'
+    OnClick = ButtonBinerClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object ButtonLogika: TButton
+    Left = 220
+    Height = 31
+    Top = 90
+    Width = 220
+    Caption = 'Logika Biner'
+    OnClick = ButtonLogikaClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object ButtonBlending: TButton
+    Left = 220
+    Height = 31
+    Top = 130
+    Width = 224
+    Caption = 'Image Blending'
+    OnClick = ButtonBlendingClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object TrackBar1: TTrackBar
+    Left = 460
+    Height = 31
+    Top = 130
+    Width = 180
+    Max = 9
+    Min = 1
+    OnChange = TrackBar1Change
+    Position = 1
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 650
+    Height = 20
+    Top = 140
+    Width = 28
+    Caption = '10%'
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox1: TComboBox
+    Left = 450
+    Height = 28
+    Top = 10
+    Width = 50
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      '+'
+      '-'
+      'x'
+      '/'
+    )
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 9
+    Text = '+'
+  end
+  object ComboBox2: TComboBox
+    Left = 450
+    Height = 28
+    Top = 50
+    Width = 50
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      '+'
+      '-'
+      'x'
+      '/'
+    )
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 10
+    Text = '+'
+  end
+  object ComboBox3: TComboBox
+    Left = 450
+    Height = 28
+    Top = 90
+    Width = 65
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'AND'
+      'OR'
+      'NOT AND'
+      'NOT OR'
+      'XOR'
+    )
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 11
+    Text = 'AND'
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 630
+    Top = 350
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    FileName = 'C:\Data\UBM\2021-2022 ganjil\training lazarus 5PTI51\contoh.ico'
+    InitialDir = 'C:\Data\UBM\2021-2022 ganjil\training lazarus 5PTI51\'
+    Left = 500
+    Top = 320
+  end
+end
